@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Nicolas Wibart — Alternant DevOps</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy:#1A2E4A; --cyan:#0088CC;
-    --text:#1C2D3F; --muted:#4A6A88; --dim:#8AA8C0;
-    --border:#D0E0EE; --bg:#F7FAFD; --bg2:#EEF5FB; --white:#FFFFFF;
-    --tag-bg:#E8F2FA; --tag-brd:#C0D8EE;
+    --navy:#16263D; --cyan:#0094D4;
+    --text:#1A2B3C; --muted:#4A6278; --dim:#8AA0B8;
+    --border:#D4E4F0; --bg:#F6FAFE; --bg2:#ECF4FB; --white:#FFFFFF;
+    --tag-bg:#E6F1FA; --tag-brd:#BDD4E8;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
-    font-family:'Syne', sans-serif;
+    font-family:'Plus Jakarta Sans', sans-serif;
     background:var(--white); color:var(--text);
-    width:210mm; margin:0 auto; font-size:8.2px;
+    width:210mm; margin:0 auto; font-size:8.4px;
   }
   .page { display:grid; grid-template-columns:58mm 1fr; min-height:297mm; }
 
@@ -41,13 +41,13 @@
   .name-last  { font-size:20px; font-weight:800; color:#5BC8F5; letter-spacing:2.5px; line-height:1; text-align:center; }
   .role-tag {
     margin-top:3px; text-align:center;
-    font-family:'JetBrains Mono', monospace;
+    font-family:'DM Mono', monospace;
     font-size:6.5px; color:rgba(255,255,255,0.42); line-height:1.8;
   }
   .role-tag .v { color:rgba(91,200,245,0.85); }
 
   .s-lbl {
-    font-family:'JetBrains Mono', monospace;
+    font-family:'DM Mono', monospace;
     font-size:6px; font-weight:700;
     color:rgba(91,200,245,0.9); letter-spacing:2px; text-transform:uppercase;
     margin:3.5mm 0 1.8mm 0;
@@ -57,7 +57,7 @@
 
   .ci {
     display:flex; align-items:center; gap:5px; margin-bottom:1.5mm;
-    font-family:'JetBrains Mono', monospace; font-size:6.8px; color:rgba(255,255,255,0.45);
+    font-family:'DM Mono', monospace; font-size:6.8px; color:rgba(255,255,255,0.45);
   }
   .ci .ico {
     width:11px; height:11px; background:rgba(255,255,255,0.06);
@@ -70,7 +70,7 @@
   .sk { margin-bottom:1.8mm; }
   .sk-top {
     display:flex; justify-content:space-between;
-    font-family:'JetBrains Mono', monospace;
+    font-family:'DM Mono', monospace;
     font-size:6.8px; color:rgba(255,255,255,0.5); margin-bottom:1.2mm;
   }
   .sk-top .lvl { font-size:6px; color:rgba(255,255,255,0.25); }
@@ -79,7 +79,7 @@
 
   .lang-row {
     display:flex; align-items:center; justify-content:space-between; margin-bottom:1.5mm;
-    font-family:'JetBrains Mono', monospace; font-size:7.5px; color:rgba(255,255,255,0.48);
+    font-family:'DM Mono', monospace; font-size:7.5px; color:rgba(255,255,255,0.48);
   }
   .dots { display:flex; gap:3px; }
   .dot  { width:4.5px; height:4.5px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); }
@@ -89,7 +89,7 @@
   .int-tag {
     background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12);
     border-radius:20px; padding:1mm 2mm;
-    font-family:'JetBrains Mono', monospace; font-size:6.5px; color:rgba(255,255,255,0.42);
+    font-family:'DM Mono', monospace; font-size:6.5px; color:rgba(255,255,255,0.42);
   }
 
   /* MAIN */
@@ -99,12 +99,13 @@
     background:var(--bg); border:1px solid var(--border);
     border-left:3px solid var(--cyan); border-radius:0 6px 6px 0;
     padding:2.5mm 3.5mm; margin-bottom:2.5mm;
-    font-size:8px; color:var(--muted); line-height:1.7;
+    font-size:8px; color:var(--muted); line-height:1.75;
+    font-weight:500;
   }
 
   .sec { display:flex; align-items:center; gap:8px; margin:2.5mm 0 1.8mm 0; }
   .sec-lbl {
-    font-family:'JetBrains Mono', monospace; font-size:6.5px; font-weight:700;
+    font-family:'DM Mono', monospace; font-size:6.5px; font-weight:700;
     color:var(--cyan); letter-spacing:2px; text-transform:uppercase; white-space:nowrap;
   }
   .sec-line { flex:1; height:1px; background:var(--border); }
@@ -121,9 +122,9 @@
   }
   .proj-hd { display:flex; align-items:flex-start; justify-content:space-between; gap:4px; margin-bottom:1.2mm; }
   .proj-name { font-size:9.5px; font-weight:700; color:var(--text); }
-  .proj-sub  { font-family:'JetBrains Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
+  .proj-sub  { font-family:'DM Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
   .proj-status {
-    font-family:'JetBrains Mono', monospace; font-size:6px;
+    font-family:'DM Mono', monospace; font-size:6px;
     padding:1px 5px; border-radius:10px; white-space:nowrap; flex-shrink:0;
     background:#FFF8E6; color:#7A5A00; border:1px solid #EDD68A;
   }
@@ -134,10 +135,10 @@
     border-radius:4px; padding:1.5mm 2.5mm; margin-bottom:1.8mm;
   }
   .arch-lbl {
-    font-family:'JetBrains Mono', monospace; font-size:6px; color:var(--dim);
+    font-family:'DM Mono', monospace; font-size:6px; color:var(--dim);
     text-transform:uppercase; letter-spacing:1px; margin-bottom:1.2mm;
   }
-  .arch-flow { display:flex; flex-wrap:wrap; align-items:center; gap:2px; font-family:'JetBrains Mono', monospace; font-size:6.5px; }
+  .arch-flow { display:flex; flex-wrap:wrap; align-items:center; gap:2px; font-family:'DM Mono', monospace; font-size:6.5px; }
   .arch-step { background:var(--white); border:1px solid var(--border); border-radius:3px; padding:1px 4px; color:var(--muted); }
   .arch-arrow { color:var(--dim); font-size:8px; }
 
@@ -151,7 +152,7 @@
 
   .tags { display:flex; flex-wrap:wrap; gap:2px; margin-top:1.5mm; }
   .tag {
-    font-family:'JetBrains Mono', monospace; font-size:6px;
+    font-family:'DM Mono', monospace; font-size:6px;
     color:var(--cyan); background:var(--tag-bg);
     border:1px solid var(--tag-brd); border-radius:3px; padding:1px 4px;
   }
@@ -163,11 +164,11 @@
     display:flex; flex-direction:column; gap:1mm;
   }
   .repo-icon { font-size:12px; }
-  .repo-name { font-family:'JetBrains Mono', monospace; font-size:6.8px; font-weight:700; color:var(--cyan); }
+  .repo-name { font-family:'DM Mono', monospace; font-size:6.8px; font-weight:700; color:var(--cyan); }
   .repo-desc { font-size:7px; color:var(--muted); line-height:1.5; }
   .repo-tags { display:flex; flex-wrap:wrap; gap:2px; }
   .rtag {
-    font-family:'JetBrains Mono', monospace; font-size:5.5px;
+    font-family:'DM Mono', monospace; font-size:5.5px;
     color:var(--dim); background:var(--white); border:1px solid var(--border);
     border-radius:3px; padding:0.5px 3px;
   }
@@ -176,9 +177,9 @@
   .job-hd { display:flex; align-items:baseline; flex-wrap:wrap; gap:4px; margin-bottom:1.2mm; }
   .jt { font-size:9.5px; font-weight:700; color:var(--text); }
   .jc { font-size:8.5px; font-weight:600; color:var(--cyan); }
-  .jm { font-family:'JetBrains Mono', monospace; font-size:6.5px; color:var(--dim); margin-left:auto; }
+  .jm { font-family:'DM Mono', monospace; font-size:6.5px; color:var(--dim); margin-left:auto; }
   .sub {
-    font-family:'JetBrains Mono', monospace; font-size:6.5px; font-weight:700;
+    font-family:'DM Mono', monospace; font-size:6.5px; font-weight:700;
     color:var(--muted); text-transform:uppercase; letter-spacing:1px;
     margin:1.5mm 0 1.2mm 0;
   }
@@ -186,7 +187,7 @@
     display:inline-flex; align-items:center; gap:3px;
     background:var(--tag-bg); border:1px solid var(--tag-brd);
     border-radius:20px; padding:1px 6px;
-    font-family:'JetBrains Mono', monospace; font-size:6.5px;
+    font-family:'DM Mono', monospace; font-size:6.5px;
     color:var(--cyan); font-weight:700; vertical-align:middle; margin-left:3px;
   }
   .stat-pill .dot-live { width:4px; height:4px; border-radius:50%; background:var(--cyan); flex-shrink:0; }
@@ -201,14 +202,14 @@
   .cert .ct { font-size:7.5px; font-weight:700; color:var(--text); }
   .cert.done .ct::after { content:' ✓'; color:#009960; }
   .cert.wip  .ct::after { content:' ⟳'; color:#B08000; }
-  .cert .cs  { font-family:'JetBrains Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
+  .cert .cs  { font-family:'DM Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
 
   .edu-card {
     background:var(--bg); border:1px solid var(--border);
     border-radius:5px; padding:1.8mm 2.5mm; margin-bottom:1.2mm;
   }
   .edu-card .es { font-size:7.5px; font-weight:700; color:var(--text); }
-  .edu-card .ed { font-family:'JetBrains Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
+  .edu-card .ed { font-family:'DM Mono', monospace; font-size:6.5px; color:var(--dim); margin-top:1px; }
 
   @media print { body { -webkit-print-color-adjust:exact; print-color-adjust:exact; } }
 </style>
@@ -233,9 +234,9 @@
   <div class="s-lbl">Contact</div>
   <div class="ci"><span class="ico">📍</span>Bordeaux</div>
   <div class="ci"><span class="ico">☎</span>+33 6 73 81 97 08</div>
-  <div class="ci"><span class="ico">@</span>nicolas.wibart@hotmail.fr</div>
-  <div class="ci"><span class="ico">in</span><a href="#">linkedin.com/in/nicolaswibart</a></div>
-  <div class="ci"><span class="ico">⌨</span><a href="#">github.com/nicolaswibart-DevOps</a></div>
+  <div class="ci"><span class="ico">@</span><a href="mailto:nicolas.wibart@gmail.com">nicolas.wibart@gmail.com</a></div>
+  <div class="ci"><span class="ico">in</span><a href="https://www.linkedin.com/in/nicolaswibart/">linkedin.com/in/nicolaswibart</a></div>
+  <div class="ci"><span class="ico">⌨</span><a href="https://github.com/nicolaswibart-DevOps">github.com/nicolaswibart-DevOps</a></div>
 
   <div class="s-lbl">Stack DevOps</div>
   <div class="sk"><div class="sk-top"><span>Linux / Bash</span><span class="lvl">Avancé</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
@@ -268,7 +269,7 @@
 <main class="main">
 
   <div class="profile">
-    Après 3 ans comme Tech Recruiter DevOps/Infra, j'ai décidé de <strong style="color:var(--text)">passer de l'autre côté</strong> — ne plus observer les ingénieurs construire, mais <strong style="color:var(--text)">construire moi-même</strong>. J'ai investi <strong style="color:var(--text)">450h dans la formation DevOps DataScientest (RNCP7)</strong> couvrant Docker, K8s, Terraform, AWS, Ansible, ArgoCD, Prometheus/Grafana — en parallèle d'une certification <strong style="color:var(--text)">AWS Cloud Practitioner</strong> (SAA en cours).
+    3 ans à sourcer et évaluer les meilleurs profils DevOps/Infra — j'ai appris à reconnaître ce qui fait un bon ingénieur. Puis j'ai décidé <strong style="color:var(--text)">de passer de l'autre côté</strong> : ne plus observer construire, mais <strong style="color:var(--text)">construire moi-même</strong>. Formation <strong style="color:var(--text)">450h DataScientest (RNCP6)</strong>, certifié <strong style="color:var(--text)">AWS Cloud Practitioner</strong>, SAA en cours.
   </div>
 
   <div class="sec"><span class="sec-lbl">Projet fil rouge</span><div class="sec-line"></div></div>
@@ -277,12 +278,12 @@
     <div class="proj-hd">
       <div>
         <div class="proj-name">Infrastructure K8s On-Premise — Full Stack FastAPI</div>
-        <div class="proj-sub">Formation DevOps DataScientest · RNCP7 · Mars → Avril 2026 · Proxmox + GitLab + ArgoCD</div>
+        <div class="proj-sub">Formation DevOps DataScientest · RNCP6 · Mars → Avril 2026 · Proxmox + GitLab + ArgoCD</div>
       </div>
       <span class="proj-status">En cours</span>
     </div>
     <div class="proj-desc">
-      Migration d'une app Full Stack (FastAPI + React + PostgreSQL + Traefik) de Docker Compose vers Kubernetes on-premise entièrement provisionné par code. 3 environnements isolés (dev / staging / prod), GitOps, monitoring complet et sauvegardes automatisées.
+      Migration Full Stack (FastAPI + React + PostgreSQL) de Docker Compose vers K8s on-premise provisionné par code. 3 environnements isolés, GitOps, monitoring et backups automatisés.
     </div>
     <div class="proj-arch">
       <div class="arch-lbl">Pipeline CI/CD</div>
@@ -297,11 +298,11 @@
       </div>
     </div>
     <ul class="bl" style="margin-bottom:0">
-      <li><strong>IaC :</strong> 3 VMs Proxmox via Terraform (master + 2 workers), config K8s via Ansible (kubeadm, containerd).</li>
-      <li><strong>GitOps ArgoCD :</strong> sync automatique cluster ↔ k8s-manifests ; Helm Charts + overlays Kustomize par env.</li>
-      <li><strong>Sécurité :</strong> RBAC par namespace, cert-manager Let's Encrypt, secrets K8s, scan images CI.</li>
-      <li><strong>Observabilité :</strong> Prometheus + Grafana — métriques cluster, app, PostgreSQL ; alerting sur seuils critiques.</li>
-      <li><strong>Backup :</strong> Velero + MinIO — quotidien, rétention 30j prod / 7j dev, RTO &lt; 30 min.</li>
+      <li><strong>IaC :</strong> Proxmox via Terraform, configuration K8s via Ansible (kubeadm, containerd).</li>
+      <li><strong>GitOps :</strong> ArgoCD — sync auto cluster ↔ manifests ; Helm + Kustomize par env.</li>
+      <li><strong>Sécurité :</strong> RBAC, cert-manager Let's Encrypt, scan images CI.</li>
+      <li><strong>Observabilité :</strong> Prometheus + Grafana — métriques cluster, app, alerting.</li>
+      <li><strong>Backup :</strong> Velero + MinIO — rétention 30j/7j, RTO &lt; 30 min.</li>
     </ul>
     <div class="tags">
       <span class="tag">Terraform</span><span class="tag">Ansible</span><span class="tag">Kubernetes</span>
@@ -345,15 +346,15 @@
     <div class="sub">Automatisation &amp; Outils maison</div>
     <ul class="bl">
       <li>
-        <strong>Chatbot de prospection LinkedIn :</strong> LinkedIn Helper pour les séquences automatisées + bot maison Python (FastAPI + Uvicorn) —
+        <strong>Bot LinkedIn :</strong> Python (FastAPI + Uvicorn) pour séquences automatisées —
         <span class="stat-pill"><span class="dot-live"></span>19 110 abonnés</span>.
       </li>
-      <li><strong>CRM boosté à l'IA :</strong> scoring automatique des candidats via API Claude/ChatGPT sur Airtable — <strong>700+ DevOps</strong> et <strong>450+ SRE/QA</strong> traités par an.</li>
-      <li>Scripts Python pour parsing CVs et scoring ; dashboards Airtable (Reply / Offer / Accept rates).</li>
+      <li><strong>CRM IA :</strong> scoring automatique Claude/ChatGPT sur Airtable — <strong>700+ DevOps</strong> et <strong>450+ SRE/QA</strong> traités/an.</li>
+      <li>Scripts Python pour parsing CVs ; dashboards Airtable (Reply / Offer / Accept rates).</li>
     </ul>
     <div class="sub">Recrutement Full-Cycle Infra / DevOps</div>
     <ul class="bl">
-      <li>Périmètre : CTO, Head of DevOps, SRE/Platform, Network &amp; Systems, QA-Auto, Backend, Data — Junior à Staff Engineer.</li>
+      <li>Périmètre : CTO, Head of DevOps, SRE/Platform, QA-Auto, Backend, Data — Junior à Staff Engineer.</li>
       <li>Ratio <strong>≈ 1 offre / 5 entretiens</strong>, closing en <strong>&lt; 3 mois</strong> sur rôles complexes DevOps/SRE.</li>
     </ul>
   </div>
@@ -367,7 +368,7 @@
       </div>
       <div class="cert wip">
         <div class="ct">AWS Solutions Architect Assoc.</div>
-        <div class="cs">En cours — 2025</div>
+        <div class="cs">En cours — 2026</div>
       </div>
     </div>
     <div>
@@ -378,20 +379,11 @@
       </div>
       <div class="edu-card">
         <div class="es">Formation DevOps — DataScientest</div>
-        <div class="ed">RNCP7 · 450h · Finition avril 2025</div>
+        <div class="ed">RNCP6 · 450h · Finition avril 2026</div>
       </div>
       <div class="edu-card">
         <div class="es">Python — Udemy</div>
         <div class="ed">75h · 80% complété</div>
       </div>
       <div class="edu-card">
-        <div class="es">Ingénieur Agronome</div>
-        <div class="ed">ENSAT Toulouse | 2018</div>
-      </div>
-    </div>
-  </div>
-
-</main>
-</div>
-</body>
-</html>
+        <div class="es">Ingénieur Agro
